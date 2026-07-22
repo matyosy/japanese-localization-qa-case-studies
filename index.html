@@ -1097,7 +1097,8 @@ alt="English UI">
 
 <p class="image-caption">
 
-The original English においては正しい用語"Note"を使用している。
+The original English UI consistently uses
+the term "Note" throughout the application.
 
 </p>
 
@@ -1158,8 +1159,36 @@ alt="Recommended Translation">
 
 <p>
 
-用語に一貫性がないとユーザーが混乱する場合がある。また、その製品に対する信頼感が損なわれてしまうかもしれない。
-Obsidianにおいて、"File"/「ファイル」ではなく"Note"/「ノート」を使うことにしているならば、この慣習は大事にしなければならない。
+The English UI consistently uses the term
+"Note" throughout the application.
+
+However, one Japanese string translates it
+as 「ファイル」 ("File"),
+which breaks terminology consistency.
+
+Using different terms for the same concept
+may confuse users and reduce confidence
+in the interface.
+
+</p>
+
+</div>
+
+<div class="qa-item">
+
+<h3>User Impact</h3>
+
+<p>
+
+Users may believe that
+"File" and "Note"
+refer to different concepts.
+
+The inconsistency also makes it harder
+to understand documentation,
+tutorials,
+and menu items that consistently use
+the term "Note."
 
 </p>
 
@@ -1178,6 +1207,27 @@ Replace
 with
 
 <strong>「ノート」</strong>.
+
+to match the terminology used throughout
+the rest of the application
+and maintain consistency across the UI.
+
+</p>
+
+</div>
+
+<div class="qa-item">
+
+<h3>Why it matters</h3>
+
+<p>
+
+Terminology consistency is one of the
+fundamental principles of localization QA.
+
+Even small wording differences can create
+uncertainty when the same concept appears
+throughout an application.
 
 </p>
 
