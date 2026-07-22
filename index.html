@@ -319,7 +319,7 @@ border-radius:16px;
 
 padding:18px;
 
-text-align:center;
+text-align:left;
 
 }
 
@@ -337,7 +337,7 @@ width:100%;
 
 border-radius:10px;
 
-<!--cursor:pointer;	イメージ拡大機能は将来実装予定-->
+/* cursor:pointer;	Image zoom feature will be implemented in the future */
 
 transition:.2s;
 
@@ -345,7 +345,8 @@ transition:.2s;
 
 .image-card img:hover{
 
-<!--transform:scale(1.02);	イメージ拡大機能は将来実装予定-->
+/* transform:scale(1.02);	Image zoom feature will be implemented in the future */
+transform:scale(1.0);
 
 }
 
@@ -469,11 +470,61 @@ font-weight:600;
 
 }
 
+/* Severity */
+.high{
+
+background:#fef3c7;
+
+color:#92400e;
+
+}
+
 .medium{
 
 background:#fef3c7;
 
 color:#92400e;
+
+}
+
+.low{
+
+background:#fef3c7;
+
+color:#92400e;
+
+}
+
+/* Category */
+.terminology{
+
+background:#dbeafe;
+
+color:#1d4ed8;
+
+}
+
+.naturalness{
+
+background:#dbeafe;
+
+color:#1d4ed8;
+
+}
+
+.consistency{
+
+background:#dbeafe;
+
+color:#1d4ed8;
+
+}
+
+.brevity{
+
+background:#dbeafe;
+
+color:#1d4ed8;
 
 }
 
@@ -485,6 +536,23 @@ color:#1d4ed8;
 
 }
 
+.tone{
+
+background:#dbeafe;
+
+color:#1d4ed8;
+
+}
+
+.untranslated{
+
+background:#dbeafe;
+
+color:#1d4ed8;
+
+}
+
+/* Skills */
 .skills{
 
 display:flex;
@@ -573,7 +641,7 @@ footer{
 
 padding:70px 0;
 
-<!--text-align:center;-->
+/* text-align:center; */
 text-align:left;
 
 color:var(--text-light);
@@ -634,7 +702,7 @@ border-radius:12px;
 
 box-shadow:0 20px 50px rgba(0,0,0,.4);
 
-<--cursor:pointer;-->
+/* cursor:pointer; */
 
 }
 
@@ -704,9 +772,9 @@ Yoshitaka M.
 
 </div>
 
-</div>
+</div> <!-- class="hero-content" -->
 
-</div>
+</div> <!-- class="container" -->
 
 </section>
 
@@ -967,9 +1035,194 @@ Category · Context
 
 </div>
 
+</div> <!-- class="qa-grid" -->
+
+</div> <!-- class="case-details" -->
+
+</div> <!-- class="case-card" --> <!-- End of CASE 1 -->
+
+<!-- ===================================================== -->
+
+<!-- CASE 2 -->
+
+<!-- ===================================================== -->
+
+<div class="case-card">
+
+<h2 class="case-title">
+
+Case 2 — Obsidian における用語"Note"の一貫性のない翻訳
+
+</h2>
+
+<!-- ===================================================== -->
+<!-- OVERVIEW -->
+<!-- ===================================================== -->
+
+<div class="case-overview">
+
+<h3>Overview</h3>
+
+<p>
+
+ヘルプの冒頭に"Notes in Obsidian are stored as plain text files. "とあるように、
+Obsidianでは単位となるユーザーデータを一貫して<strong>"Note"</strong>と表現する。
+
+翻訳後もこれに合わせて一貫した用語を用いなければならない。そうでないならば、ユーザーは混乱し
+必要な作業に集中できなくなるかもしれない。
+
+</p>
+
+</div>
+
+<!-- ===================================================== -->
+<!-- IMAGE COMPARISON -->
+<!-- ===================================================== -->
+
+<div class="image-grid">
+
+<div class="image-card">
+
+<h4>Original (English)</h4>
+
+<img
+src="imgs/Obs005-English.png"
+alt="English UI">
+
+<p class="image-caption">
+
+The original English においては正しい用語"Note"を使用している。
+
+</p>
+
+</div>
+
+<div class="image-card">
+
+<h4>Current Japanese</h4>
+
+<img
+src="imgs/Obs005-Before.png"
+alt="Current Japanese Translation">
+
+<p class="image-caption">
+
+<strong>「ファイル」</strong>は"File"を意味し"Note"と同じものを表すかもしれないが、
+用語が統一されていないためユーザーは混乱するだろう。
+
+</p>
+
+</div>
+
+<div class="image-card">
+
+<h4>Recommended</h4>
+
+<img
+src="imgs/Obs005-After.png"
+alt="Recommended Translation">
+
+<p class="image-caption">
+
+置き換えられた
+<strong>「ノート」</strong>
+は他でも一貫して使用されている日本語の用語であり、"Note"を意味する。
+
+</p>
+
 </div>
 
 </div>
+
+<!-- ===================================================== -->
+<!-- CASE DETAILS -->
+<!-- ===================================================== -->
+
+<div class="case-details">
+
+<!-- ===================================================== -->
+<!-- QA DETAILS -->
+<!-- ===================================================== -->
+
+<div class="qa-grid">
+
+<div class="qa-item">
+
+<h3>Problem</h3>
+
+<p>
+
+用語に一貫性がないとユーザーが混乱する場合がある。また、その製品に対する信頼感が損なわれてしまうかもしれない。
+Obsidianにおいて、"File"/「ファイル」ではなく"Note"/「ノート」を使うことにしているならば、この慣習は大事にしなければならない。
+
+</p>
+
+</div>
+
+<div class="qa-item">
+
+<h3>Recommendation</h3>
+
+<p>
+
+Replace
+
+<strong>「ファイル」</strong>
+
+with
+
+<strong>「ノート」</strong>.
+
+</p>
+
+</div>
+
+<div class="qa-item">
+
+<h3>Skills Demonstrated</h3>
+
+<div class="skills">
+
+<span class="skill">UX-focused QA</span>
+
+<span class="skill">Terminology Review</span>
+
+</div>
+
+</div>
+
+<div class="qa-item">
+
+<h3>Assessment</h3>
+
+<div class="badge-row">
+
+<span class="status-badge low">
+
+Severity · Low
+
+</span>
+
+<span class="status-badge terminology">
+
+Category · Terminology
+
+</span>
+
+</div>
+
+</div>
+
+</div> <!-- class="qa-grid" -->
+
+</div> <!-- class="case-details" -->
+
+</div> <!-- class="case-card" --> <!-- End of CASE 2 -->
+
+
+</div> <!-- class="container" -->
+
+</section> <!-- End of CASE STUDIES-->
 
 <!-- ===================================================== -->
 <!-- FUTURE CASES -->
@@ -992,22 +1245,6 @@ Additional localization QA case studies currently in preparation.
 </p>
 
 <div class="future-grid">
-
-<div class="future-card">
-
-<h3>
-
-Obsidian
-
-</h3>
-
-<p>
-
-Terminology Consistency
-
-</p>
-
-</div>
 
 <div class="future-card">
 
@@ -1041,40 +1278,30 @@ Tone Consistency
 
 </div>
 
-</div>
+</div> <!-- class="future-grid" -->
 
-</div>
+</div> <!-- class="container" -->
 
-</section>
+</section> <!-- End of FUTURE CASES --> 
 
 <!-- ===================================================== -->
 <!-- FOOTER -->
 <!-- ===================================================== -->
 
-<footer>
+<!--footer>
 
 <strong>
 
 Yoshitaka M.
 
 </strong>
-<!--
-Japanese Localization QA
 
-<br>
-
-UX Copy Review
-
-<br>
-
-AI Translation Review
--->
 Japanese Localization QA | UX Copy Review | AI Translation Review
 <br><br>
 
 Independent portfolio created for demonstration purposes.
 
-</footer>
+</footer-->
 
 <!-- ===================================================== -->
 <!-- IMAGE MODAL -->
@@ -1095,7 +1322,9 @@ alt="Expanded image">
 <!-- SCRIPT -->
 <!-- ===================================================== -->
 
-<!--script>
+<!--
+/* Image zoom feature will be implemented in the future */
+<script>
 
 const modal =
 document.getElementById("imageModal");
@@ -1123,7 +1352,10 @@ modal.style.display="none";
 
 };
 
-</script	イメージ拡大機能は将来実装予定-->
+</script>
+
+/* Image zoom feature will be implemented in the future */
+-->
 
 </body>
 
