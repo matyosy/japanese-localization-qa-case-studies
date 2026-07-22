@@ -50,4 +50,4 @@ Created by
 
 **Yoshitaka M.**
 
-Japanese Localization QA | UX Copy Review |AI Translation Review
+Japanese Localization QA | UX Copy Review | AI Translation Review
