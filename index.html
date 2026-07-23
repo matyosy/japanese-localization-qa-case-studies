@@ -1178,7 +1178,7 @@ Replace
 
 with
 
-<strong>「ノート」</strong>.
+<strong>「ノート」</strong>
 
 to match the terminology used throughout
 the rest of the application
@@ -1247,6 +1247,212 @@ Category · Terminology
 
 </div> <!-- class="case-card" --> <!-- End of CASE 2 -->
 
+<!-- ===================================================== -->
+
+<!-- CASE 3 -->
+
+<!-- ===================================================== -->
+
+<div class="case-card">
+
+<h2 class="case-title">
+
+Case 3 — Untranslation in Joplin
+
+</h2>
+
+<!-- ===================================================== -->
+<!-- OVERVIEW -->
+<!-- ===================================================== -->
+
+<div class="case-overview">
+
+<h3>Overview</h3>
+
+<p>
+
+Joplinでは日本語に翻訳されずに、オリジナルの英文のままとなっている箇所が目立つ。
+日本語ユーザーの中には英文を全く読めない方も多く、重大な問題となりうる。
+
+</p>
+
+</div>
+
+<!-- ===================================================== -->
+<!-- IMAGE COMPARISON -->
+<!-- ===================================================== -->
+
+<div class="image-grid">
+
+<div class="image-card">
+
+<h4>Original (English)</h4>
+
+<img
+src="imgs/Jop002-English.png"
+alt="English UI">
+
+<p class="image-caption">
+
+オリジナルの英文では、チェックボックスがOCRを有効にすることを表している。
+またその後に、その機能の詳細について説明している。
+
+</p>
+
+</div>
+
+<div class="image-card">
+
+<h4>Current Japanese</h4>
+
+<img
+src="imgs/Jop002-Before.png"
+alt="Current Japanese Translation">
+
+<p class="image-caption">
+
+チェックボックスの意味について、また提供される機能の詳細について、一切翻訳されていない。
+"OCR"は日本語でもそのまま使われるので、英文を読もうとする一部のユーザーには理解される可能性もあるが、
+多くのユーザーは読まずに諦めるだろう。
+
+</p>
+
+</div>
+
+<div class="image-card">
+
+<h4>Recommended</h4>
+
+<img
+src="imgs/Jop002-After.png"
+alt="Recommended Translation">
+
+<p class="image-caption">
+
+日本語に翻訳されているので、チェックボックスの意味、提供される機能についてすぐに理解できる。
+
+</p>
+
+</div>
+
+</div>
+
+<!-- ===================================================== -->
+<!-- CASE DETAILS -->
+<!-- ===================================================== -->
+
+<div class="case-details">
+
+<!-- ===================================================== -->
+<!-- QA DETAILS -->
+<!-- ===================================================== -->
+
+<div class="qa-grid">
+
+<div class="qa-item">
+
+<h3>Problem</h3>
+
+<p>
+
+言語設定を日本語に設定した場合、アプリケーションに表示されるすべての文言は、日本語に翻訳されていなければならない。
+オリジナルの英文のままであれば、ユーザーはそれを一切読めないかもしれない。
+
+</p>
+
+</div>
+
+<div class="qa-item">
+
+<h3>User Impact</h3>
+
+<p>
+
+日本語に翻訳されているアプリケーションとそうでないアプリケーションがあるなら、多くのユーザーは翻訳されているものを選ぶ。
+翻訳されていない個所を見つけた時点でユーザーは読解しようとはせず、諦めて別のアプリケーションを探しに行くだろう。
+
+</p>
+
+</div>
+
+<div class="qa-item">
+
+<h3>Recommendation</h3>
+
+<p>
+
+オリジナルの英文(1)を日本語(2)に翻訳。
+日本語のUIの慣習に従い、チェックボックスの説明は明瞭・簡潔に、
+有効にした場合に提供される機能については分かりやすく丁寧に説明する。
+<p>
+(1)<br>
+☑ OCR: Enable optical character recognition<br>
+When enabled, the application will scan your attachments and extract the text from it.
+This will allow you to search for text in these attachments.
+</p>
+<p>
+(2)<br>
+☑ OCR: 有効<br>
+有効にした場合、アプリケーションは添付ファイルをスキャンしテキストを抽出します。
+これにより、添付ファイル内のテキスト検索が可能になります。
+</p>
+
+</p>
+
+</div>
+
+<div class="qa-item">
+
+<h3>Why it matters</h3>
+
+<p>
+
+未翻訳はローカリゼーションQA以前の問題であり、あってはならない事象である。
+日本語ユーザーが英文を読めないことは良くあることである。
+
+</p>
+
+</div>
+
+<div class="qa-item">
+
+<h3>Skills Demonstrated</h3>
+
+<div class="skills">
+
+<span class="skill">English to Japanese Translation</span>
+
+</div>
+
+</div>
+
+<div class="qa-item">
+
+<h3>Assessment</h3>
+
+<div class="badge-row">
+
+<span class="status-badge high">
+
+Severity · High
+
+</span>
+
+<span class="status-badge untranslated">
+
+Category · untranslated
+
+</span>
+
+</div>
+
+</div>
+
+</div> <!-- class="qa-grid" -->
+
+</div> <!-- class="case-details" -->
+
+</div> <!-- class="case-card" --> <!-- End of CASE 3 -->
 
 </div> <!-- class="container" -->
 
@@ -1273,22 +1479,6 @@ Additional localization QA case studies currently in preparation.
 </p>
 
 <div class="future-grid">
-
-<div class="future-card">
-
-<h3>
-
-Joplin
-
-</h3>
-
-<p>
-
-Untranslated Interface Elements
-
-</p>
-
-</div>
 
 <div class="future-card">
 
